@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# A funtion that listening port 98 on localhost
+nc -lk localhost 98
