@@ -18,7 +18,7 @@ echo "Hello World!" > /var/www/html/index.html
 
 # Add to the nginx configuration file a redirection to another page
 FIND=$(grep "redirect_me" /etc/nginx/sites-available/default)
-STRING="\\\n\tlocation /redirect_me {\n\t\t return 301 https://www.twitter.com/Ogah_daniels;\n\t}\n"
+STRING="\\\n\tlocation /redirect_me {\n\t\t return 301 https://github.com/Krizdaniels/alx-system_engineering-devops/blob/master/0x0F-load_balancer/0-custom_http_response_header;\n\t}\n"
 if [[ -z $FIND ]]; then
     sed -i "42i $STRING" /etc/nginx/sites-available/default
 fi
